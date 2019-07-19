@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 
-
     <!-- assets/style.css my custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 
     <title>My Portfolio Page</title>
 </head>
@@ -19,7 +17,7 @@
 <body>
 
     <!-- Header  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-header">
         <a class="navbar-brand" href="#"><span id="logo">George Fellouris</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,9 +26,9 @@
 
         <div class="collapse navbar-collapse nav-align justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">About</a>
-                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                <a class="nav-item nav-link text-white" href="index.html">About</a>
+                <a class="nav-item nav-link text-white" href="portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link text-white" href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
@@ -38,49 +36,31 @@
 
     <!-- Main Container  -->
     <div class="container">
-
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Contact</h1>
+        <!-- Contact Section -->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="divider my-4">
+                        <p class="text-muted mb-5">Have a job opportunity or ready to start your next project? Give me a call or send me
+                            an email and I will get back to you as soon as possible!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                        <div>+1 (917) 952-8147</div>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                        <!-- Make sure to change the email address in anchor text AND the link below! -->
+                        <a class="d-block" href="mailto:geofell22@gmail.com">geofell22@gmail.com</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <form id="contact-form">
-            <div class="form-group">
-
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul>
-                            <li>
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="John Smith" required="required">
-                            </li>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul>
-                            <li>
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com"
-                                    required="required">
-                            </li>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-12">
-                        <ul>
-                            <li>
-                                    <label for="message">Message:</label>
-                                    <textarea class="form-control" rows="5" id="comment" name="message"></textarea>
-                            </li>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
     </div>
     <!-- Main Container END  -->
 

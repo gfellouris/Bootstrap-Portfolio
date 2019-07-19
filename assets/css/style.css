@@ -1,18 +1,22 @@
 /* General styles */
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  /* font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background-image: url("../images/beige-tiles.png");
+  /* background-image: url("../images/bg-masthead.jpg"); */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(92, 77, 66, 0.8)), to(rgba(92, 77, 66, 0.8))), url("../images/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../images/bg-masthead.jpg");
+
 }
+
 
 h1,
 h2,
 h3 {
-  font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  color: #4aaaa5;
+  color: #E76744;
 }
 
 h1 {
@@ -30,8 +34,8 @@ footer {
   color: #ffffff;
   color: #cccccc;
   text-align: center;
-  background: #666666;
-  border-top: 8px solid #4aaaa5;
+  background: rgba(92, 77, 66, 0.3);
+  border-top: 8px solid #E76744;
   height: 50px;
 }
 
@@ -50,18 +54,49 @@ label {
   border: 1px solid #dddddd;
 }
 
+.bg-header {
+  /* background-color: #6F6158; */
+  background: rgba(92, 77, 66, 0.3);
+  /* opacity: 0.1; */
+  z-index: 2;
+  border-bottom: 8px solid #E76744;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
 #logo {
   float: left;
   width: 350px;
   height: 90px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  /* font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  background: #4aaaa5;
+  z-index: 1;
 }
 
 #imgProfile {

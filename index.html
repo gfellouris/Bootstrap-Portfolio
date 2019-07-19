@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+    <!-- JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
     <!-- assets/style.css my custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 
     <title>My Portfolio Page</title>
 </head>
@@ -19,7 +27,7 @@
 <body>
 
     <!-- Header  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-header">
         <a class="navbar-brand" href="#"><span id="logo">George Fellouris</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,9 +36,9 @@
 
         <div class="collapse navbar-collapse nav-align justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">About</a>
-                <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
+                <a class="nav-item nav-link text-white" href="index.html">About</a>
+                <a class="nav-item nav-link text-white" href="portfolio.html">Portfolio</a>
+                <a class="nav-item nav-link text-white" href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
@@ -47,20 +55,44 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <img id="imgProfile" class="float-left" alt="Me" src="assets/images/200x200.png" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veritatis vero dicta, modi quod
-                    inventore illum aliquid quam ipsam dolor quae tenetur consequuntur impedit nobis optio, consectetur,
-                    explicabo laboriosam fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
-                    maiores, quam doloribus reprehenderit, incidunt nihil fugiat temporibus soluta qui expedita quis,
-                    nisi iusto nulla natus modi mollitia nesciunt! Repellat, quis. Lorem ipsum dolor sit amet
-                    consectetur adipisicing elit. Amet cum ut quia, rerum, impedit nobis odit accusantium maxime alias
-                    soluta ullam? Ullam ducimus reprehenderit commodi veniam, officiis praesentium nostrum fugit!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic error unde nihil aliquid fuga. Vitae
-                    quibusdam, voluptate sequi animi molestias incidunt expedita dolor dolores deleniti officiis esse,
-                    odit laborum nisi!</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, hic iure? Rerum magni eveniet
-                    iste? Cum mollitia nostrum repellendus nulla blanditiis. Consequatur reiciendis accusantium autem
-                    distinctio, et exercitationem aliquam ullam.</p>
+                <img id="imgProfile" class="float-left" alt="Me" src="assets/images/myprofilepic.jpg" />
+                <p>
+                    A seasoned, highly skilled, Information Technology Executive with a diverse technical background and
+                    20+ years
+                    of progressive career experience in Operational Infrastructure / Application support, Full Stack
+                    Development, Agile Scrum Methodology and Transformations particularly in high pressure,
+                    fast-paced Global Technology environment.
+                </p>
+                <p>
+                    Expert proficiency with leading complex multi-million IT initiatives, building and directing
+                    high-performing cross-functional teams. Well organized, result-oriented, highly creative individual
+                    with
+                    proven ability to implement standards, procedures and processes that drive operational efficiencies.
+                    Solid management skills, capable of leading and motivating individuals to maximize productivity,
+                    while
+                    forming cohesive team environments. Servant-leader with a keen focus on building collaborative teams
+                    and
+                    strong client relationships.
+                </p>
+                <p>
+                    Educated at Wagner College with a BSN degree in Computer Science. Certificate in Full Stack Web
+                    Development
+                    from Rutgers University. Also certified as a Professional Scrum Master (PSM I) and Professional
+                    Scrum
+                    Product Owner (PSPO I) by Scrum.org. Excited about developing responsive websites in an
+                    Agile environment with highly motivated and passionate individuals.
+                </p>
+                <div class="social-icons">
+                    <a target="blank" href="https://www.linkedin.com/in/george-fellouris-207b018" data-toggle="tooltip" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a target="blank" href="https://github.com/gfellouris" data-toggle="tooltip" title="GitHub!">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a target="blank" href="assets/docs/GeorgeFellouris_FINAL.pdf" data-toggle="tooltip" title="Resume">
+                        <i class="far fa-id-card"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -71,6 +103,11 @@
         <span>Copyright &copy;</span>
     </footer>
 
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
