@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+    <!-- JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- assets/style.css my custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 
     <title>My Portfolio Page</title>
 </head>
@@ -48,12 +56,12 @@
             <div class="col-sm-6">
                 <img src="assets/images/movie-fu-640-480.jpg" alt="movieFu" class="img-thumbnail">
                 <p>
-                    <a target="blank" href="https://github.com/gfellouris/movieFu.git" data-toggle="tooltip"
-                        title="GitHub! - see the source code.">
+                    <a target="blank" href="https://github.com/gfellouris/movieFu.git" data-placement="bottom"
+                        data-toggle="tooltip" title="GitHub! - see the source code.">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a target="blank" href="https://gfellouris.github.io/movieFu/" data-toggle="tooltip"
-                        title="Visit the site!">
+                    <a target="blank" href="https://gfellouris.github.io/movieFu/" data-placement="bottom"
+                        data-toggle="tooltip" title="Visit the site!">
                         <i class="far fa-file-code"></i>
                     </a>
                 </p>
@@ -61,12 +69,12 @@
             <div class="col-sm-6">
                 <img src="assets/images/trivia-game-650-480.jpg" class="img-thumbnail" />
                 <p>
-                    <a target="blank" href="https://github.com/gfellouris/TriviaGame.git" data-toggle="tooltip"
-                        title="GitHub! - see the source code.">
+                    <a target="blank" href="https://github.com/gfellouris/TriviaGame.git" data-placement="bottom"
+                        data-toggle="tooltip" title="GitHub! - see the source code.">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a target="blank" href="https://gfellouris.github.io/TriviaGame/" data-toggle="tooltip"
-                        title="Visit the site!">
+                    <a target="blank" href="https://gfellouris.github.io/TriviaGame/" data-placement="bottom"
+                        data-toggle="tooltip" title="Visit the site!">
                         <i class="far fa-file-code"></i>
                     </a>
                 </p>
@@ -77,12 +85,12 @@
             <div class="col-sm-6">
                 <img src="assets/images/giftastic-640-622.jpg" class="img-thumbnail" />
                 <p>
-                    <a target="blank" href="https://github.com/gfellouris/GifTastic.git" data-toggle="tooltip"
-                        title="GitHub! - see the source code.">
+                    <a target="blank" href="https://github.com/gfellouris/GifTastic.git" data-placement="bottom"
+                        data-toggle="tooltip" title="GitHub! - see the source code.">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a target="blank" href="https://gfellouris.github.io/GifTastic/" data-toggle="tooltip"
-                        title="Visit the site!">
+                    <a target="blank" href="https://gfellouris.github.io/GifTastic/" data-placement="bottom"
+                        data-toggle="tooltip" title="Visit the site!">
                         <i class="far fa-file-code"></i>
                     </a>
                 </p>
@@ -99,6 +107,11 @@
         <span>Copyright &copy;</span>
     </footer>
 
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
