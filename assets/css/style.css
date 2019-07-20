@@ -23,6 +23,9 @@ body {
 }
 
 /* unvisited link */
+a.img-link:hover {
+  border: 3px solid #e76744;
+}
 a:link {
   color: #495057;
 }
